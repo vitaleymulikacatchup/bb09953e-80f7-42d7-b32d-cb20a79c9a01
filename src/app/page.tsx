@@ -65,9 +65,9 @@ export default function Home() {
           <ProductCardOne
             title="Our Menu"
             products={[
-              { id: "1", name: "Margherita", price: "$12", imageSrc: "/images/margherita.jpg", onProductClick: "() => window.open('https://example.com/products/margherita', '_blank')" },
-              { id: "2", name: "Pepperoni", price: "$15", imageSrc: "/images/pepperoni.jpg", onProductClick: "() => window.open('https://example.com/products/pepperoni', '_blank')" },
-              { id: "3", name: "Vegetarian", price: "$14", imageSrc: "/images/vegetarian.jpg", onProductClick: "() => window.open('https://example.com/products/vegetarian', '_blank')" }
+              { id: "1", name: "Margherita", price: "$12", imageSrc: "/images/margherita.jpg", onProductClick: () => window.open('https://example.com/products/margherita', '_blank') },
+              { id: "2", name: "Pepperoni", price: "$15", imageSrc: "/images/pepperoni.jpg", onProductClick: () => window.open('https://example.com/products/pepperoni', '_blank') },
+              { id: "3", name: "Vegetarian", price: "$14", imageSrc: "/images/vegetarian.jpg", onProductClick: () => window.open('https://example.com/products/vegetarian', '_blank') }
             ]}
           />
         </div>
