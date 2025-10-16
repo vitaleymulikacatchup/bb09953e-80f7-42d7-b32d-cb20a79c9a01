@@ -16,84 +16,80 @@ import "./globals.css";
 const interTight = Inter_Tight({
   variable: "--font-inter-tight",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair",
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700", "800", "900"]
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "500", "700", "900"]
+  weight: ["100", "300", "400", "500", "700", "900"],
 });
 
 const openSans = Open_Sans({
   variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"]
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const lato = Lato({
   variable: "--font-lato",
   subsets: ["latin"],
-  weight: ["100", "300", "400", "700", "900"]
+  weight: ["100", "300", "400", "700", "900"],
 });
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const raleway = Raleway({
   variable: "--font-raleway",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 const ubuntu = Ubuntu({
   variable: "--font-ubuntu",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "700"]
+  weight: ["300", "400", "500", "700"],
 });
 
 const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
-  weight: ["200", "300", "400", "500", "600", "700", "800", "900"]
+  weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "Delicious Pizzeria",
-  description: "Taste the best pizzas made with fresh ingredients and unique recipes. Order online now!",
+  title: "Delicious Pizza at Our Pizzeria",
+  description: "Enjoy the best pizza with fresh ingredients at our pizzeria. Visit us or order online!",
   openGraph: {
-    title: "Delicious Pizzeria",
-    description: "Taste the best pizzas made with fresh ingredients and unique recipes. Order online now!",
-    url: "https://example.com",
-    siteName: "Delicious Pizzeria",
-    images: [{
-      url: "https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940",
-      alt: "A mouthwatering slice of pepperoni pizza with cheese and spices, ideal for any meal."
-    }],
-    type: "website"
+    title: "Delicious Pizza at Our Pizzeria",
+    description: "Enjoy the best pizza with fresh ingredients at our pizzeria. Visit us or order online!",
+    siteName: "Pizzeria",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Delicious Pizzeria",
-    description: "Taste the best pizzas made with fresh ingredients and unique recipes. Order online now!",
-    images: ["https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"]
+    title: "Delicious Pizza at Our Pizzeria",
+    description: "Enjoy the best pizza with fresh ingredients at our pizzeria. Visit us or order online!",
   },
-  robots: { index: true, follow: true }
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
