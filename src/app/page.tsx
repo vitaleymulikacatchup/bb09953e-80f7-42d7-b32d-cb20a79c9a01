@@ -7,6 +7,7 @@ import FeatureCardTwo from '@/components/sections/feature/FeatureCardTwo';
 import ProductCardOne from '@/components/sections/product/ProductCardOne';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Leaf, Zap } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { id: "heroImage", url: "https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", alt: "A mouthwatering slice of pepperoni pizza with cheese and spices, ideal for any meal." },
@@ -33,7 +34,7 @@ export default function Home() {
           <HeroBillboard
             title="Welcome to Our Pizzeria"
             description="Taste the best pizzas made with fresh ingredients."
-            imageSrc="https://images.pexels.com/photos/708587/pexels-photo-708587.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            imageSrc="asset://heroImage"
             buttons={[
               { text: "Order Now", href: "https://example.com/order" },
               { text: "Learn More", href: "about" }
@@ -54,8 +55,8 @@ export default function Home() {
           <FeatureCardTwo
             title="Our Unique Features"
             features={[
-              { title: "Authentic Ingredients", description: "Using only the freshest and finest ingredients.", icon: "Leaf" },
-              { title: "Unique Recipes", description: "Combining flavors for a unique tasting experience.", icon: "Zap" }
+              { title: "Authentic Ingredients", description: "Using only the freshest and finest ingredients.", icon: Leaf },
+              { title: "Unique Recipes", description: "Combining flavors for a unique tasting experience.", icon: Zap }
             ]}
           />
         </div>
@@ -89,7 +90,7 @@ export default function Home() {
               { title: "Explore", items: [{ label: "Menu", href: "product" }, { label: "About Us", href: "about" }] },
               { title: "Support", items: [{ label: "Contact", href: "contact" }, { label: "FAQs", href: "https://example.com/faq" }] }
             ]}
-            logoSrc="https://images.pexels.com/photos/7317349/pexels-photo-7317349.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+            logoSrc="asset://footerLogo"
             copyrightText="© 2025 | Pizzeria"
           />
         </div>
